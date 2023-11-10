@@ -64,75 +64,87 @@ interface WikimediaFileDataResponse {
 }
 
 export default async function loadImageData(imageName: string): Promise<ImageData | null> {
-    console.log("\n\n\nLoading image data for " + imageName);
-
-    const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${imageName}&prop=imageinfo&format=json`, true);
-    const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + imageName);
-    const wikimediaPageId = Object.keys(imageData.query.pages)[0];
-    const wikimediaPage: any = await makeRequest(`https://commons.m.wikimedia.org/wiki/Special:EntityData/M${wikimediaPageId}.json`)
-
-    // Return null if no wikidata page exists
-    if (!wikimediaPage.entities["M" + wikimediaPageId].statements.P6243) {
-        return null
-    }
-
-    const wikidataId = wikimediaPage.entities["M" + wikimediaPageId].statements.P6243[0].mainsnak.datavalue.value.id;
-    const wikidata: any = await fetchWikidata(wikidataId);
+    try {
 
 
+        console.log("\n\n\nLoading image data for " + imageName);
 
-    // Get date
-    let date: string | undefined;
-    if (wikidata.claims.P571[0] && wikidata.claims.P571[0].mainsnak.datavalue) {
-        date =
-            wikidata.claims.P571[0].mainsnak.datavalue
-                .value.time.replace("+", "").replace("T00:00:00Z", "");
-    }
+        const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${imageName}&prop=imageinfo&format=json`, true);
+        const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + imageName);
+        const wikimediaPageId = Object.keys(imageData.query.pages)[0];
 
-    // Get files
-    const files: File[] = [];
-    const keys = Object.keys(fileData!).filter((key) => key !== "title" && key !== "file_description_url" && key !== "latest");
-    for (const key of keys) {
-        const file = fileData![key];
-        files.push({
-            name: key,
-            width: file.width,
-            height: file.height,
-            url: file.url
-        });
-    }
-
-    // Get Museum
-    let museum: Museum | undefined;
-    if (wikidata.claims.P195) {
-        const museumData = await fetchWikidata(wikidata.claims.P195[0].mainsnak.datavalue.value.id);
-        museum = {
-            names: getLabels(museumData),
-            wikipedia: getWikipedia(museumData)
-        };
-    }
-
-    // Get artist
-    let artist: Artist | undefined;
-    if (wikidata.claims.P170) {
-        const artistData = await fetchWikidata(wikidata.claims.P170[0].mainsnak.datavalue.value.id);
-        artist = {
-            names: getLabels(artistData),
-            wikipedia: getWikipedia(artistData)
-        };
-    }
-
-    return {
-        image: imageName,
-        files,
-        metadata: {
-            title: getLabels(wikidata),
-            artist,
-            date: new Date(date!).getFullYear().toString(),
-            wikipedia: getWikipedia(wikidata),
-            museum
+        if (!wikimediaPageId || wikimediaPageId.length < 2) {
+            return null;
         }
-    };
+
+        const wikimediaPage: any = await makeRequest(`https://commons.m.wikimedia.org/wiki/Special:EntityData/M${wikimediaPageId}.json`)
+
+        // Return null if no wikidata page exists
+        if (!wikimediaPage.entities["M" + wikimediaPageId].statements.P6243) {
+            return null
+        }
+
+        const wikidataId = wikimediaPage.entities["M" + wikimediaPageId].statements.P6243[0].mainsnak.datavalue.value.id;
+        const wikidata: any = await fetchWikidata(wikidataId);
+
+
+
+        // Get date
+        let date: string | undefined;
+        if (wikidata.claims.P571[0] && wikidata.claims.P571[0].mainsnak.datavalue) {
+            date =
+                wikidata.claims.P571[0].mainsnak.datavalue
+                    .value.time.replace("+", "").replace("T00:00:00Z", "").replace("-00-00", "");
+        }
+
+        // Get files
+        const files: File[] = [];
+        const keys = Object.keys(fileData!).filter((key) => key !== "title" && key !== "file_description_url" && key !== "latest");
+        for (const key of keys) {
+            const file = fileData![key];
+            files.push({
+                name: key,
+                width: file.width,
+                height: file.height,
+                url: file.url
+            });
+        }
+
+        // Get Museum
+        let museum: Museum | undefined;
+        if (wikidata.claims.P195 && wikidata.claims.P195[0].mainsnak.datavalue) {
+            const museumData = await fetchWikidata(wikidata.claims.P195[0].mainsnak.datavalue.value.id);
+            museum = {
+                names: getLabels(museumData),
+                wikipedia: getWikipedia(museumData)
+            };
+        }
+
+        // Get artist
+        let artist: Artist | undefined;
+        if (wikidata.claims.P170 && wikidata.claims.P170[0].mainsnak.datavalue) {
+            const artistData = await fetchWikidata(wikidata.claims.P170[0].mainsnak.datavalue.value.id);
+            artist = {
+                names: getLabels(artistData),
+                wikipedia: getWikipedia(artistData)
+            };
+        }
+
+        return {
+            image: imageName,
+            files,
+            metadata: {
+                title: getLabels(wikidata),
+                artist,
+                date: new Date(date!).getFullYear().toString(),
+                wikipedia: getWikipedia(wikidata),
+                museum
+            }
+        };
+    } catch (e) {
+        console.log(e);
+        return null;
+    }
 }
 
 async function fetchWikidata(wikidataId: string) {
@@ -170,7 +182,7 @@ function getWikipedia(wikidata: any): Wikipedia[] {
 }
 
 
-
+let retries = 0;
 /**
  * Attempts to make a request to the given url. If it fails, it will retry up to 3 times.
  * @param url The url to make a request to
@@ -180,16 +192,18 @@ function getWikipedia(wikidata: any): Wikipedia[] {
 async function makeRequest<T>(url: string, corsproxy: boolean = false): Promise<T> {
     // Repeat request until it succeeds
     console.log("Fetching " + url);
-    let retries = 0;
+
     try {
         const response = await fetch(corsproxy ? CORSPROXY + url : url);
         const data = await response.json() as T;
+        retries = 0;
         return data;
     } catch (e) {
         console.log(e);
         console.log("Retrying...");
         retries++;
-        if (retries > 3) {
+        console.log("Retry " + retries);
+        if (retries > 4) {
             throw new Error("Failed to fetch data from " + url);
         } else {
             return await makeRequest(url);
