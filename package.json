@@ -23,6 +23,7 @@
     "web-ext": "^7.8.0"
   },
   "dependencies": {
+    "lucide-vue-next": "^0.292.0",
     "pinia": "^2.1.7",
     "vue": "^3.2.47",
     "webextension-polyfill": "^0.10.0"
