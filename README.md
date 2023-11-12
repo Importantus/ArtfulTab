@@ -1,6 +1,10 @@
 # ArtfulTab
 
-## Usage Notes
+Artful Tab is a browser extension that shows art from all over the world on the new New Tab page. Discover a new curated artwork from Wikimedia Commons every 24 hours. Get artist details and artwork information sourced from Wikidata.
+
+![Artful Tab](./docs/Screenshot-Firefox.png)
+
+## Development
 
 The extension manifest is defined in `src/manifest.js` and used in the vite config.
 
