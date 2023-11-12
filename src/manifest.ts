@@ -33,13 +33,12 @@ const browserAction = {
 const ManifestV2 = {
   ...sharedManifest,
   browser_action: browserAction,
-  permissions: [...sharedManifest.permissions, "*://*/*"],
+  permissions: [...sharedManifest.permissions],
 };
 
 const ManifestV3 = {
   ...sharedManifest,
   action: browserAction,
-  host_permissions: ["*://*/*"],
 };
 
 export function getManifest(manifestVersion: number): chrome.runtime.ManifestV2 | chrome.runtime.ManifestV3 {
