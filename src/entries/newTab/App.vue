@@ -6,7 +6,7 @@ import ReloadButton from "./components/ReloadButton.vue";
 import WikiInfo from "./components/WikiInfo.vue";
 import ImagefitSelector from "./components/ImagefitSelector.vue";
 
-import { useDataStore } from "./store";
+import { useDataStore } from "../store";
 
 const dataStore = useDataStore();
 
@@ -16,7 +16,7 @@ dataStore.init();
 <template>
   <main>
     <LoadingScreen />
-    <Image />
+    <Image :class="{'image': dataStore.settings.animation}" />
     <BottomBar>
       <div class="right">
         <ReloadButton />
@@ -37,6 +37,24 @@ dataStore.init();
 </template>
 
 <style>
+/* Blende die image Klasse beim Laden langsam ein */
+.image {
+  opacity: 0;
+  animation: fadeIn linear 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .infos {
   display: flex;
   flex-direction: column;
@@ -79,3 +97,4 @@ main {
   color: white;
 }
 </style>
+../../store

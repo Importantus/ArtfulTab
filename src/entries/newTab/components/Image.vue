@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { imageFit, useDataStore } from '../store';
+import { imageFit, useDataStore } from '../../store';
 
 const dataStore = useDataStore();
 </script>
@@ -9,7 +9,7 @@ const dataStore = useDataStore();
         <div class="fill" :style="{ backgroundImage: 'url(' + dataStore.thumbnailUrl + ')' }"
             :class="{ 'blur': dataStore.settings.imageFit.id !== imageFit.fill.id }"></div>
         <img v-if="dataStore.imageData.files !== undefined && dataStore.settings.imageFit.id === imageFit.fit.id"
-            :src="dataStore.thumbnailUrl" />
+            :src="dataStore.thumbnailUrl" :class="{'animation': dataStore.settings.animation}"/>
     </div>
 </template>
 
@@ -45,4 +45,24 @@ img {
     max-height: 90%;
     max-width: 100%;
 }
+
+.animation {
+    animation: moveUp ease-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0.3;
+    transform: translateY(40px);
+    scale: 0.95;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    scale: 1;
+  }
+}
 </style>
+../../../store
