@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useDataStore } from "../store";
+import { useDataStore } from "../../store";
 import { RotateCw } from "lucide-vue-next";
 
 const dataStore = useDataStore();

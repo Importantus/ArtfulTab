@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { WikipediaData } from '../store'
+import { WikipediaData } from '~/types';
+
 
 interface Props {
     wikipediaData: WikipediaData

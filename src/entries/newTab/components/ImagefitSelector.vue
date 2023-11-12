@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { imageFit } from '../store';
+import { imageFit } from '../../store';
 import ImagefitItem from './ImagefitItem.vue';
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useDataStore } from "../store";
+import { useDataStore } from "../../store";
 import { Loader2 } from "lucide-vue-next"
 
 const dataStore = useDataStore();

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
-import { useDataStore, ImageFit } from '../store';
+import { useDataStore } from '../../store';
+import { ImageFit } from '~/types';
 
 interface Props {
     imageFitValue: ImageFit;
