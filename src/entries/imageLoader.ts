@@ -1,67 +1,8 @@
+import { Artist, Museum, WikimediaFileDataResponse, ImageData, Wikipedia, Label, File } from "~/types";
+
 const CORSPROXY = "https://corsproxy.io/?";
 
-export interface ImageData {
-    image: string;
-    files: File[];
-    metadata: Metadata;
-}
 
-export interface File {
-    name: string;
-    width: number;
-    height: number;
-    url?: string;
-}
-
-export interface Metadata {
-    title: Label[];
-    artist?: Artist;
-    date?: string;
-    wikipedia: Wikipedia[];
-    museum?: Museum;
-}
-
-export interface Label {
-    lang: string;
-    value: string;
-}
-
-export interface Museum {
-    names: Label[];
-    wikipedia: Wikipedia[];
-}
-
-export interface Artist {
-    names: Label[];
-    wikipedia: Wikipedia[];
-}
-
-export interface Wikipedia {
-    lang: string;
-    title: string;
-    url: string;
-}
-
-interface WikimediaFileDataResponse {
-    continue: {
-        iistart: string;
-        continue: string;
-    };
-    query: {
-        pages: {
-            [key: string]: {
-                pageid: number;
-                ns: number;
-                title: string;
-                imagerepository: string;
-                imageinfo: {
-                    timestamp: string;
-                    user: string;
-                }[];
-            };
-        };
-    };
-}
 
 export default async function loadImageData(imageName: string): Promise<ImageData | null> {
     try {
