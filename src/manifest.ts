@@ -14,7 +14,7 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
   },
   browser_specific_settings: {
     gecko: {
-      id: "artfultab@importantus.me"
+      id: "new-tab-art@importantus.me"
     }
   }
 };
