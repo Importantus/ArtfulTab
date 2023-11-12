@@ -93,6 +93,10 @@ export const useDataStore = defineStore("dataStore", {
             if (this.lastChanged.getTime() < new Date().getTime() - 1000 * 60 * 60 * this.settings.hoursUntilNextImage) {
                 this.loadImage();
             }
+        },
+        saveSettings() {
+            if (this.settings.hoursUntilNextImage.toString() !== "" && this.settings.hoursUntilNextImage < 1) this.settings.hoursUntilNextImage = 1;
+            localStorage.setItem("settings", JSON.stringify(this.settings));
         }
     },
     getters: {
