@@ -1,36 +1,32 @@
 import pkg from "../package.json";
 
 const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
-  // icons: {
-  //   16: "icons/16.png",
-  //   19: "icons/19.png",
-  //   32: "icons/32.png",
-  //   38: "icons/38.png",
-  //   48: "icons/48.png",
-  //   64: "icons/64.png",
-  //   96: "icons/96.png",
-  //   128: "icons/128.png",
-  //   256: "icons/256.png",
-  //   512: "icons/512.png",
-  // },
+  icons: {
+    32: "icons/32.png",
+    64: "icons/64.png",
+    128: "icons/128.png",
+    256: "icons/256.png",
+    512: "icons/512.png",
+  },
   permissions: [],
   chrome_url_overrides: {
     newtab: "src/entries/newTab/index.html"
   },
   browser_specific_settings: {
     gecko: {
-      id: "new-tab-art@importantus.me"
+      id: "artfultab@importantus.me"
     }
   }
 };
 
 const browserAction = {
-  // default_icon: {
-  //   16: "icons/16.png",
-  //   19: "icons/19.png",
-  //   32: "icons/32.png",
-  //   38: "icons/38.png",
-  // },
+  default_icon: {
+    32: "icons/32.png",
+    64: "icons/64.png",
+    128: "icons/128.png",
+    256: "icons/256.png",
+    512: "icons/512.png",
+  },
   default_popup: "src/entries/popup/index.html",
 };
 

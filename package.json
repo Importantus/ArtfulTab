@@ -1,9 +1,9 @@
 {
-  "name": "vite-web-extension",
-  "version": "1.0.0",
-  "displayName": "Vite Web Extension",
-  "author": "@samrum/vite-plugin-web-extension",
-  "description": "A @samrum/vite-plugin-web-extension web extension",
+  "name": "artfultab",
+  "version": "0.0.1",
+  "displayName": "Artful Tab",
+  "author": "Importantus",
+  "description": "Artful Tab is a new tab page that displays beautiful art from around the world.",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "watch": "vite build --watch --mode development --minify false",
