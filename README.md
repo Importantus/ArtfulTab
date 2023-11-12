@@ -1,27 +1,16 @@
 # ArtfulTab
 
-This template should help get you started developing a vue web extension in Vite.
-
 ## Usage Notes
 
-The extension manifest is defined in `src/manifest.js` and used by `@samrum/vite-plugin-web-extension` in the vite config.
+The extension manifest is defined in `src/manifest.js` and used in the vite config.
 
-Background, content scripts, options, and popup entry points exist in the `src/entries` directory. 
-
-Content scripts are rendered by `src/entries/contentScript/renderContent.js` which renders content within a ShadowRoot
-and handles style injection for HMR and build modes.
+The popup and newTab entry points exist in the `src/entries` directory. 
 
 Otherwise, the project functions just like a regular Vite project.
 
-To switch between Manifest V2 and Manifest V3 builds, use the MANIFEST_VERSION environment variable defined in `.env`
-
-HMR during development in Manifest V3 requires Chromium version >= 110.0.5480.0.
+To switch between Manifest V2 and Manifest V3 builds, use the MANIFEST_VERSION environment variable defined in `.env`. Used in the uploaded build is V2.
 
 Refer to [@samrum/vite-plugin-web-extension](https://github.com/samrum/vite-plugin-web-extension) for more usage notes.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
