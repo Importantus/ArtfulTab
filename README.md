@@ -2,6 +2,10 @@
 
 Artful Tab is a browser extension that shows art from all over the world on the new New Tab page. Discover a new curated artwork from Wikimedia Commons every 24 hours. Get artist details and artwork information sourced from Wikidata.
 
+[<img src="https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg" width=170px>](https://addons.mozilla.org/en-US/firefox/addon/artful-tab/)
+
+\
+\
 ![Artful Tab](./docs/Screenshot-Firefox.png)
 
 ## Development
