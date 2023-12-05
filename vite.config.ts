@@ -12,7 +12,8 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vue(),
       webExtension({
-        manifest: getManifest(Number(env.MANIFEST_VERSION)),
+        // manifest: getManifest(Number(env.MANIFEST_VERSION)),
+        manifest: getManifest(2)
       }),
     ],
     resolve: {
