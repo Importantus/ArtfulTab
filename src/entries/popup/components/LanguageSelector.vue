@@ -1,49 +1,44 @@
 <script setup lang="ts">
-import countries from 'i18n-iso-countries';
 import { ref, watch } from 'vue';
 import LanguageItem from './LanguageItem.vue';
-import data from 'i18n-iso-countries/langs/en.json';
+import codes from 'iso-language-codes';
 import { X } from 'lucide-vue-next';
-
-countries.registerLocale(data);
-
-const numberOfCountries = 5;
-
-const allCountries = countries.getNames("en", { select: "official" });
 
 export interface Country {
     name: string;
+    nativeName: string;
     code: string;
 }
 
 
-const allCountriesArray = Object.keys(allCountries).map((key) => ({
-  name: allCountries[key],
-  code: key,
-}))
+const allLanguages = codes.map((key) => ({
+    name: key.name,
+    nativeName: key.nativeName,
+    code: key.iso639_1
+})).sort((a, b) => a.name.localeCompare(b.name));
 
 const searchString = ref('')
-const filteredCountries = ref(allCountriesArray.slice(0, numberOfCountries))
+const filteredCountries = ref(allLanguages)
 
 watch(searchString, (newVal) => {
-  filteredCountries.value = allCountriesArray
-    .filter((country) =>
-      country.name.toLowerCase().includes(newVal.toLowerCase())
-    )
-    .slice(0, numberOfCountries)
+    filteredCountries.value = allLanguages
+        .filter((country) =>
+            country.name.toLowerCase().includes(newVal.toLowerCase())
+        )
 })
 </script>
 
 <template>
     <div class="background">
-    <X class="close-button" :size="24" @click="$emit('close')" color="white"/>
-    <div class="selector">
-        <input type="text" v-model="searchString" placeholder="Search..." />
-        <div class="countries">
-            <LanguageItem v-for="country in filteredCountries" :key="country.code" :country="country" @selected="$emit('close')"/>
+        <X class="close-button" :size="24" @click="$emit('close')" color="white" />
+        <div class="selector">
+            <input type="text" v-model="searchString" placeholder="Search..." autofocus />
+            <div class="languages">
+                <LanguageItem v-for="country in filteredCountries" :key="country.code" :country="country"
+                    @selected="$emit('close')" />
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <style scoped>
@@ -59,6 +54,7 @@ watch(searchString, (newVal) => {
     box-sizing: border-box;
     position: fixed;
     backdrop-filter: blur(5px);
+    z-index: 100;
 }
 
 .close-button {
@@ -78,7 +74,7 @@ input {
     font-size: 16px;
     font-weight: 500;
     color: white;
-    background-color: #B0A190;
+    background-color: #908375;
     margin-bottom: 10px;
     outline: none;
 }
@@ -93,14 +89,19 @@ input::placeholder {
     width: 100%;
 }
 
-.countries {
+.languages {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 5px;
     width: 100%;
-    height: 100%;
+    height: 60vh;
+    overflow-y: scroll;
     box-sizing: border-box;
+}
+
+.languages::-webkit-scrollbar {
+    display: none;
 }
 </style>

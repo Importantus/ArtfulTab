@@ -90,7 +90,8 @@ main {
 .switch input {
   height: 0;
   opacity: 0;
-  width: 0
+  width: 0;
+  z-index: 0
 }
 
 .slider {
