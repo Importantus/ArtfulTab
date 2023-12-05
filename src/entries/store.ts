@@ -21,6 +21,7 @@ interface Settings {
     imageFit: ImageFit;
     language: string,
     animation: boolean;
+    brightness: number;
 }
 
 const defaultSettings: Settings = {
@@ -28,6 +29,7 @@ const defaultSettings: Settings = {
     imageFit: imageFit.fit,
     language: navigator.language.split("-")[0],
     animation: window.matchMedia('(prefers-reduced-motion: reduce)') ? false : true,
+    brightness: 100,
 }
 
 function loadSettings() {
@@ -63,6 +65,10 @@ export const useDataStore = defineStore("dataStore", {
             this.settings.imageFit = imageFit;
             localStorage.setItem("settings", JSON.stringify(this.settings));
         },
+        setBrightness(brightness: number) {
+            this.settings.brightness = brightness;
+            localStorage.setItem("settings", JSON.stringify(this.settings));
+        },
         setImageData(imageData: ImageData) {
             console.log("Setting image data");
 
@@ -72,6 +78,7 @@ export const useDataStore = defineStore("dataStore", {
             this.lastChanged = new Date();
             localStorage.setItem("lastChanged", JSON.stringify(this.lastChanged));
         },
+
         async loadImage() {
             const imageList = await fetch("/images.json").then((response) => response.json()) as imageList;
 

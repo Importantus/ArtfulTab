@@ -7,16 +7,23 @@ import WikiInfo from "./components/WikiInfo.vue";
 import ImagefitSelector from "./components/ImagefitSelector.vue";
 
 import { useDataStore } from "../store";
+import { watch } from "vue";
+import BrightnessSelector from "./components/BrightnessSelector.vue";
 
 const dataStore = useDataStore();
 
 dataStore.init();
+
+watch(dataStore.settings, () => {
+  console.log("saving settings");
+  dataStore.saveSettings();
+}, { deep: true });
 </script>
 
 <template>
   <main>
     <LoadingScreen />
-    <Image :class="{'image': dataStore.settings.animation}" />
+    <Image :class="{ 'image': dataStore.settings.animation }" />
     <BottomBar>
       <div class="right">
         <ReloadButton />
@@ -31,6 +38,7 @@ dataStore.init();
           </div>
         </div>
       </div>
+      <BrightnessSelector />
       <ImagefitSelector />
     </BottomBar>
   </main>
@@ -49,6 +57,7 @@ dataStore.init();
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
