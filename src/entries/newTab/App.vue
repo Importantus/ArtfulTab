@@ -38,14 +38,28 @@ watch(dataStore.settings, () => {
           </div>
         </div>
       </div>
-      <BrightnessSelector />
-      <ImagefitSelector />
+      <div class="quick-settings">
+        <BrightnessSelector />
+        <ImagefitSelector />
+      </div>
     </BottomBar>
   </main>
 </template>
 
 <style>
-/* Blende die image Klasse beim Laden langsam ein */
+.quick-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .quick-settings {
+    flex-direction: column;
+  }
+}
+
 .image {
   opacity: 0;
   animation: fadeIn linear 1;
