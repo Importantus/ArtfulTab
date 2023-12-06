@@ -17,6 +17,9 @@
       <SettingItem name="Image Interval" description="How often the image should change (in hours)">
         <input type="number" class="watched-input" v-model="dataStore.settings.hoursUntilNextImage" />
       </SettingItem>
+      <SettingItem name="Image Selection" description="How the image should be selected">
+        <ImageSelectionSelector />
+      </SettingItem>
     </div>
   </main>
 </template>
@@ -27,6 +30,7 @@ import ImageSection from './components/ImageSection.vue';
 import SettingItem from './components/SettingItem.vue';
 import { useDataStore } from '../store';
 import { ref, watch } from 'vue';
+import ImageSelectionSelector from './components/ImageSelectionSelector.vue';
 
 const dataStore = useDataStore();
 
@@ -34,6 +38,7 @@ const showLanguageSelector = ref(false);
 
 watch(dataStore.settings, () => {
   dataStore.saveSettings();
+  console.log(dataStore.settings.imageSelection)
 }, { deep: true });
 </script>
 
@@ -42,8 +47,8 @@ main {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 300px;
-  height: 360px;
+  width: 320px;
+  height: 410px;
   background-color: #323232;
   word-break: normal;
 }

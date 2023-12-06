@@ -1,18 +1,33 @@
 import { defineStore } from "pinia";
 import loadImageData from "./imageLoader";
-import { Scaling, Fullscreen } from "lucide-vue-next";
-import { ImageFit, ImageFitObject, WikipediaData, ImageData, Label, Wikipedia } from "~/types";
+import { Scaling, Fullscreen, Shuffle, ListChecks } from "lucide-vue-next";
+import { ImageFit, ImageFitObject, WikipediaData, ImageData, ImageSelectionModeObject, ImageSelectionMode } from "~/types";
 
 type imageList = string[]
 
 export const imageFit: ImageFitObject = {
     fill: {
         id: "fill",
+        name: "Fill",
         icon: Scaling
     },
     fit: {
         id: "fit",
+        name: "Fit",
         icon: Fullscreen
+    },
+}
+
+export const imageSelectionMode: ImageSelectionModeObject = {
+    random: {
+        id: "random",
+        name: "Random",
+        icon: Shuffle
+    },
+    sequential: {
+        id: "sequential",
+        name: "Sequential",
+        icon: ListChecks
     },
 }
 
@@ -22,6 +37,7 @@ interface Settings {
     language: string,
     animation: boolean;
     brightness: number;
+    imageSelection: string;
 }
 
 const defaultSettings: Settings = {
@@ -30,6 +46,7 @@ const defaultSettings: Settings = {
     language: navigator.language.split("-")[0],
     animation: window.matchMedia('(prefers-reduced-motion: reduce)') ? false : true,
     brightness: 100,
+    imageSelection: imageSelectionMode.random.id
 }
 
 function loadSettings() {
@@ -50,6 +67,7 @@ export const useDataStore = defineStore("dataStore", {
             lastChanged: new Date(JSON.parse(localStorage.getItem("lastChanged") || '"1980-01-01"')) as Date,
             loading: false,
             settings: loadSettings(),
+            index: JSON.parse(localStorage.getItem("index") || "0") as number
         }
     },
     actions: {
@@ -69,6 +87,10 @@ export const useDataStore = defineStore("dataStore", {
             this.settings.brightness = brightness;
             localStorage.setItem("settings", JSON.stringify(this.settings));
         },
+        setImageSelection(imageSelection: ImageSelectionMode) {
+            this.settings.imageSelection = imageSelection.id;
+            localStorage.setItem("settings", JSON.stringify(this.settings));
+        },
         setImageData(imageData: ImageData) {
             console.log("Setting image data");
 
@@ -78,15 +100,12 @@ export const useDataStore = defineStore("dataStore", {
             this.lastChanged = new Date();
             localStorage.setItem("lastChanged", JSON.stringify(this.lastChanged));
         },
-
         async loadImage() {
-            const imageList = await fetch("/images.json").then((response) => response.json()) as imageList;
+            const imageName = await this.selectImage();
 
-            const randomImage = imageList[Math.floor(Math.random() * imageList.length)];
-
-            if (randomImage && randomImage.startsWith("File:")) {
+            if (imageName && imageName.startsWith("File:")) {
                 this.loading = true;
-                loadImageData(randomImage).then((imageData) => {
+                loadImageData(imageName).then((imageData) => {
                     if (imageData) {
                         this.setImageData(imageData);
                         this.loading = false;
@@ -94,6 +113,26 @@ export const useDataStore = defineStore("dataStore", {
                         this.loadImage();
                     }
                 });
+            }
+        },
+        async selectImage(): Promise<string> {
+            const imageList = await fetch("/images.json").then((response) => response.json()) as imageList;
+            let imageName = "";
+
+            if (this.settings.imageSelection === "random") {
+                imageName = imageList[Math.floor(Math.random() * imageList.length)];
+            } else {
+                const index = this.index;
+                this.index = (index + 1) % imageList.length;
+                console.log("Index: " + index);
+                localStorage.setItem("index", JSON.stringify(this.index));
+                imageName = imageList[index];
+            }
+
+            if (imageName === this.imageData.image && imageList.length > 1) {
+                return await this.selectImage();
+            } else {
+                return imageName;
             }
         },
         init() {

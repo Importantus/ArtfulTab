@@ -1,10 +1,20 @@
 interface ImageFit {
     id: string;
+    name: string;
     icon: Icon;
 }
 
 export interface ImageFitObject {
     [key: string]: ImageFit;
+}
+
+export interface ImageSelectionMode {
+    id: string;
+    name: string;
+    icon: Icon;
+}
+export interface ImageSelectionModeObject {
+    [key: string]: ImageSelectionMode;
 }
 
 export interface WikipediaData {
