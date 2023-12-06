@@ -44,7 +44,7 @@ const defaultSettings: Settings = {
     hoursUntilNextImage: 24,
     imageFit: imageFit.fit,
     language: navigator.language.split("-")[0],
-    animation: window.matchMedia('(prefers-reduced-motion: reduce)') ? false : true,
+    animation: true,
     brightness: 100,
     imageSelection: imageSelectionMode.random.id
 }
