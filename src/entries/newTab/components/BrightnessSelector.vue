@@ -3,7 +3,6 @@ import { useDataStore } from '../../store';
 import { Sun } from 'lucide-vue-next';
 
 const dataStore = useDataStore();
-console.log(dataStore.settings.brightness);
 </script>
 
 <template>

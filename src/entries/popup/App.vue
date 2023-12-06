@@ -38,7 +38,6 @@ const showLanguageSelector = ref(false);
 
 watch(dataStore.settings, () => {
   dataStore.saveSettings();
-  console.log(dataStore.settings.imageSelection)
 }, { deep: true });
 </script>
 

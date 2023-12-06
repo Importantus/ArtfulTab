@@ -15,7 +15,6 @@ const dataStore = useDataStore();
 dataStore.init();
 
 watch(dataStore.settings, () => {
-  console.log("saving settings");
   dataStore.saveSettings();
 }, { deep: true });
 </script>
