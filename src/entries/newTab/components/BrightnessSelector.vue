@@ -23,6 +23,7 @@ console.log(dataStore.settings.brightness);
     position: relative;
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 .icon {
@@ -56,6 +57,7 @@ console.log(dataStore.settings.brightness);
     background: transparent;
     z-index: 1;
     position: relative;
+    cursor: pointer;
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
