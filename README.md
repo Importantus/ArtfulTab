@@ -16,7 +16,7 @@ The popup and newTab entry points exist in the `src/entries` directory.
 
 Otherwise, the project functions just like a regular Vite project.
 
-To switch between Manifest V2 and Manifest V3 builds, use the MANIFEST_VERSION environment variable defined in `.env`. Used in the uploaded build is V2.
+To switch between Manifest V2 and Manifest V3 builds, change the `MANIFEST_VERSION` variable in `vite.config.js`.
 
 Refer to [@samrum/vite-plugin-web-extension](https://github.com/samrum/vite-plugin-web-extension) for more usage notes.
 

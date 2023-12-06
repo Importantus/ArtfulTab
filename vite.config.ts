@@ -6,14 +6,15 @@ import { getManifest } from "./src/manifest";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), "");
+  // const env = loadEnv(mode, process.cwd(), "");
+  const MANIFEST_VERSION = 3;
 
   return {
     plugins: [
       vue(),
       webExtension({
         // manifest: getManifest(Number(env.MANIFEST_VERSION)),
-        manifest: getManifest(2)
+        manifest: getManifest(MANIFEST_VERSION)
       }),
     ],
     resolve: {
