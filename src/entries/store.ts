@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import loadImageData from "./imageLoader";
-import { Scaling, Fullscreen, Shuffle, ListChecks } from "lucide-vue-next";
-import { ImageFit, ImageFitObject, WikipediaData, ImageData, ImageSelectionModeObject, ImageSelectionMode } from "~/types";
+import { Scaling, Fullscreen, Shuffle, ListChecks, Search, Wand } from "lucide-vue-next";
+import { ImageFit, ImageFitObject, WikipediaData, ImageData, ImageSelectionModeObject, ImageSelectionMode, ImageSourceObject } from "~/types";
 
 type imageList = string[]
 
@@ -28,6 +28,19 @@ export const imageSelectionMode: ImageSelectionModeObject = {
         id: "sequential",
         name: "Sequential",
         icon: ListChecks
+    },
+}
+
+export const imageSource: ImageSourceObject = {
+    curated: {
+        id: "curated",
+        name: "Curated",
+        icon: Search
+    },
+    sparql: {
+        id: "sparql",
+        name: "SPARQL",
+        icon: Wand
     },
 }
 

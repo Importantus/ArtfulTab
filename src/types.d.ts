@@ -17,6 +17,16 @@ export interface ImageSelectionModeObject {
     [key: string]: ImageSelectionMode;
 }
 
+export interface ImageSource {
+    id: string;
+    name: string;
+    icon: Icon;
+}
+
+export interface ImageSourceObject {
+    [key: string]: ImageSource;
+}
+
 export interface WikipediaData {
     label?: Label;
     wikipedia?: Wikipedia;
