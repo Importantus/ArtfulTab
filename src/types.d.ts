@@ -37,10 +37,11 @@ export interface File {
 
 export interface Metadata {
     title: Label[];
-    artist?: Artist;
+    artist?: Property;
     date?: string;
     wikipedia: Wikipedia[];
-    museum?: Museum;
+    museum?: Property;
+    movement?: Property;
 }
 
 export interface Label {
@@ -48,12 +49,7 @@ export interface Label {
     value: string;
 }
 
-export interface Museum {
-    names: Label[];
-    wikipedia: Wikipedia[];
-}
-
-export interface Artist {
+export interface Property {
     names: Label[];
     wikipedia: Wikipedia[];
 }

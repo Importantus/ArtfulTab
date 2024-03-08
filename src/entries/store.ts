@@ -190,6 +190,20 @@ export const useDataStore = defineStore("dataStore", {
                 label: label,
                 wikipedia: wikipedia,
             };
+        },
+        movement(): WikipediaData {
+            const userLang = this.settings.language.toLowerCase();
+            const fallbackLang = "en";
+
+            const movementData = this.imageData.metadata.movement
+
+            const label = movementData?.names.find((label) => label.lang === userLang) || movementData?.names.find((label) => label.lang === fallbackLang) || movementData?.names[0];
+            const wikipedia = movementData?.wikipedia.find((wikipedia) => wikipedia.lang === userLang) || movementData?.wikipedia.find((wikipedia) => wikipedia.lang === fallbackLang) || movementData?.wikipedia[0];
+
+            return {
+                label: label,
+                wikipedia: wikipedia,
+            };
         }
     }
 });

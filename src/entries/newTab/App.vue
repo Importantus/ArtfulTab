@@ -34,6 +34,8 @@ watch(dataStore.settings, () => {
             {{ dataStore.imageData.metadata.date === "NaN" ? "unknown" : dataStore.imageData.metadata.date }}
             <div>•</div>
             <WikiInfo :wikipediaData="dataStore.museum" :big="false" />
+            <div v-if="dataStore.movement.label?.value">•</div>
+            <WikiInfo v-if="dataStore.movement.label?.value" :wikipediaData="dataStore.movement" :big="false" />
           </div>
         </div>
       </div>
