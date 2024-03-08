@@ -1,4 +1,4 @@
-import { Artist, Museum, WikimediaFileDataResponse, ImageData, Wikipedia, Label, File } from "~/types";
+import { WikimediaFileDataResponse, ImageData, Wikipedia, Label, File, Property } from "~/types";
 
 const CORSPROXY = "https://corsproxy.io/?";
 
@@ -6,8 +6,6 @@ const CORSPROXY = "https://corsproxy.io/?";
 
 export default async function loadImageData(imageName: string): Promise<ImageData | null> {
     try {
-
-
         console.log("\n\n\nLoading image data for " + imageName);
 
         const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${imageName}&prop=imageinfo&format=json`, true);
@@ -52,7 +50,7 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
         }
 
         // Get Museum
-        let museum: Museum | undefined;
+        let museum: Property | undefined;
         if (wikidata.claims.P195 && wikidata.claims.P195[0].mainsnak.datavalue) {
             const museumData = await fetchWikidata(wikidata.claims.P195[0].mainsnak.datavalue.value.id);
             museum = {
@@ -62,12 +60,22 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
         }
 
         // Get artist
-        let artist: Artist | undefined;
+        let artist: Property | undefined;
         if (wikidata.claims.P170 && wikidata.claims.P170[0].mainsnak.datavalue) {
             const artistData = await fetchWikidata(wikidata.claims.P170[0].mainsnak.datavalue.value.id);
             artist = {
                 names: getLabels(artistData),
                 wikipedia: getWikipedia(artistData)
+            };
+        }
+
+        // Get movement
+        let movement: Property | undefined;
+        if (wikidata.claims.P135 && wikidata.claims.P135[0].mainsnak.datavalue) {
+            const movementData = await fetchWikidata(wikidata.claims.P135[0].mainsnak.datavalue.value.id);
+            movement = {
+                names: getLabels(movementData),
+                wikipedia: getWikipedia(movementData)
             };
         }
 
@@ -79,7 +87,8 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
                 artist,
                 date: new Date(date!).getFullYear().toString(),
                 wikipedia: getWikipedia(wikidata),
-                museum
+                museum,
+                movement
             }
         };
     } catch (e) {
