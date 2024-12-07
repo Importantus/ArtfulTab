@@ -9,6 +9,7 @@ import ImagefitSelector from "./components/ImagefitSelector.vue";
 import { useDataStore } from "../store";
 import { watch } from "vue";
 import BrightnessSelector from "./components/BrightnessSelector.vue";
+import ErrorModal from "./components/ErrorModal.vue";
 
 const dataStore = useDataStore();
 
@@ -22,6 +23,7 @@ watch(dataStore.settings, () => {
 <template>
   <main>
     <LoadingScreen />
+    <ErrorModal />
     <Image :class="{ 'image': dataStore.settings.animation }" />
     <BottomBar>
       <div class="right">

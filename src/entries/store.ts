@@ -63,6 +63,8 @@ function loadSettings() {
 export const useDataStore = defineStore("dataStore", {
     state: () => {
         return {
+            loadingAttemps: 0,
+            error: "",
             imageData: JSON.parse(localStorage.getItem("imageData") || '"{}"') as ImageData,
             lastChanged: new Date(JSON.parse(localStorage.getItem("lastChanged") || '"1980-01-01"')) as Date,
             loading: false,
@@ -102,15 +104,23 @@ export const useDataStore = defineStore("dataStore", {
         },
         async loadImage() {
             const imageName = await this.selectImage();
+            this.error = "";
 
             if (imageName && imageName.startsWith("File:")) {
                 this.loading = true;
                 loadImageData(imageName).then((imageData) => {
+                    this.loadingAttemps++;
                     if (imageData) {
                         this.setImageData(imageData);
                         this.loading = false;
+                        this.loadingAttemps = 0;
                     } else {
-                        this.loadImage();
+                        if (this.loadingAttemps < 5) {
+                            this.loadImage();
+                        } else {
+                            this.error = "Failed to load image data five times in a row. If the issue persists, please open an issue on GitHub.";
+                            this.loading = false;
+                        }
                     }
                 });
             }
