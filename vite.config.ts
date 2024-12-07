@@ -14,7 +14,9 @@ export default defineConfig(({ mode }) => {
       vue(),
       webExtension({
         // manifest: getManifest(Number(env.MANIFEST_VERSION)),
-        manifest: getManifest(MANIFEST_VERSION)
+        manifest: getManifest(MANIFEST_VERSION),
+        useDynamicUrlWebAccessibleResources: false,
+        optimizeWebAccessibleResources: true
       }),
     ],
     resolve: {
