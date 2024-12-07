@@ -8,8 +8,8 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
     try {
         console.log("\n\n\nLoading image data for " + imageName);
 
-        const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${imageName}&prop=imageinfo&format=json`, true);
-        const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + imageName);
+        const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(imageName)}&prop=imageinfo&format=json`, true);
+        const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + encodeURIComponent(imageName));
         const wikimediaPageId = Object.keys(imageData.query.pages)[0];
 
         if (!wikimediaPageId || wikimediaPageId.length < 2) {
@@ -20,6 +20,7 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
 
         // Return null if no wikidata page exists
         if (!wikimediaPage.entities["M" + wikimediaPageId].statements.P6243) {
+            console.log("No wikidata page found for " + imageName);
             return null
         }
 
@@ -143,20 +144,8 @@ async function makeRequest<T>(url: string, corsproxy: boolean = false): Promise<
     // Repeat request until it succeeds
     console.log("Fetching " + url);
 
-    try {
-        const response = await fetch(corsproxy ? CORSPROXY + url : url);
-        const data = await response.json() as T;
-        retries = 0;
-        return data;
-    } catch (e) {
-        console.log(e);
-        console.log("Retrying...");
-        retries++;
-        console.log("Retry " + retries);
-        if (retries > 4) {
-            throw new Error("Failed to fetch data from " + url);
-        } else {
-            return await makeRequest(url);
-        }
-    }
+    const response = await fetch(corsproxy ? CORSPROXY + encodeURIComponent(url) : url);
+    const data = await response.json() as T;
+    retries = 0;
+    return data;
 }
