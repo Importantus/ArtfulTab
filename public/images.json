@@ -1,229 +1,810 @@
 [
-  "File:Landscape with the Good Samaritan - Rembrandt.jpg",
-  "File:Bernardo Bellotto - View of Warsaw from the Royal Castle - Google Art Project.jpg",
-  "File:Hendrik Voogd - Italian landscape with Umbrella Pines.jpg",
-  "File:Agustín Salinas y Teruel - School Festival at Ipiranga - Google Art Project.jpg",
-  "File:Albert Bierstadt - A Storm in the Rocky Mountains, Mt. Rosalie - Google Art Project.jpg",
-  "File:August Friedrich Albrecht Schenck - Anguish - Google Art Project.jpg",
-  "File:Albert Bierstadt - Among the Sierra Nevada, California - Google Art Project.jpg",
-  "File:Albert Bierstadt - Seal Rock, California.jpg",
-  "File:Canaletto - Bucentaur's return to the pier by the Palazzo Ducale - Google Art Project.jpg",
-  "File:Gustave Caillebotte - Rue Halévy, vue d'un sixième étage.jpg",
-  "File:Julius Schnorr von Carolsfeld- Ruth im Feld des Boaz.jpg",
-  "File:Chaïm Soutine - Vue de Céret.jpg",
-  "File:Christ's Entry into Brussels in 1889.jpg",
-  "File:Church Heart of the Andes.jpg",
-  "File:Edgar Degas - Waiting - Google Art Project.jpg",
-  "File:Edouard Manet - Luncheon on the Grass - Google Art Project.jpg",
-  "File:El Tres de Mayo, by Francisco de Goya, from Prado thin black margin.jpg",
-  "File:Equestrian Portrait of Cornelis (1639–1680) and Michiel Pompe van Meerdervoort (1638–1653) with Their Tutor and Coachman (\"Starting for the Hunt\") MET DP146442.jpg",
-  "File:Erik Werenskiold - Peasant Burial - Google Art Project.jpg",
-  "File:Feld mit Kornhocken von August Haake.jpg",
-  "File:Ferdinand Hodler - Der Genfersee von Chexbres aus.jpg",
-  "File:Frans Post - Gezicht op Olinda, Brazilië.jpg",
-  "File:Frederic Edwin Church - Aurora Borealis - Google Art Project.jpg",
-  "File:Frederic Remington - Aiding a Comrade - Google Art Project.jpg",
-  "File:Fruitbowlwithmelons.jpg",
-  "File:Paul Gauguin - Fatata te Miti (By the Sea) - Google Art Project.jpg",
-  "File:Adolph Tidemand & Hans Gude - Bridal Procession on the Hardangerfjord - Google Art Project.jpg",
-  "File:Joseph Mallord William Turner - Dort or Dordrecht- The Dort Packet-Boat from Rotterdam Becalmed - Google Art Project.jpg",
-  "File:Joseph Mallord William Turner - The Burning of the Houses of Lords and Commons, 16 October 1834 - 1942.647 - Cleveland Museum of Art.jpg",
-  "File:Joseph Mallord William Turner - The Sun of Venice Going to Sea - Google Art Project.jpg",
-  "File:Leitura by José Ferraz de Almeida Júnior 1892.jpg",
-  "File:L'Embarquement pour Cythere, by Antoine Watteau, from C2RMF retouched.jpg",
-  "File:La Chambre à Arles, by Vincent van Gogh, from C2RMF.jpg",
-  "File:Legend of the Holy Ermit Anthony, Meister der Hl Sippe, W.A.F. 452, Alte Pinakothek Munich.jpg",
-  "File:Low Tide at Pourville, by Claude Monet, Cleveland Museum of Art, 1947.196.jpg",
-  "File:In the Conservatory.jpg",
-  "File:MANET - Música en las Tullerías (National Gallery, Londres, 1862).jpg",
-  "File:Miranda en la Carraca by Arturo Michelena.jpg",
-  "File:Morning, Interior - Luce.jpeg",
-  "File:Pedro Américo - Independência ou Morte - Google Art Project.jpg",
-  "File:Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
-  "File:Pieter Brueghel the Elder - The Dutch Proverbs - Google Art Project.jpg",
-  "File:Proclamação da República by Benedito Calixto 1893.jpg",
-  "File:The Great Sphinx, Pyramids of Gizeh-1839) by David Roberts, RA.jpg",
-  "File:Thomas Le Clear - Interior with Portraits - Smithsonian.jpg",
-  "File:Tropenmuseum Royal Tropical Institute Objectnumber 3348-19 Huizen aan het water in Coronie, vermo2.jpg",
-  "File:Valmy Battle painting.jpg",
-  "File:Van Gogh - Starry Night - Google Art Project.jpg",
-  "File:Farmhouse in Provence, 1888, Vincent van Gogh, NGA.jpg",
-  "File:Vincent van Gogh - Irises (1889).jpg",
-  "File:Vernet-Battle of Hanau.jpg",
-  "File:Vincent van Gogh - Starry Night - Google Art Project.jpg",
-  "File:Willem van de Velde II - Dutch men-o'-war and other shipping in a calm.jpg",
-  "File:William Holman Hunt - The Scapegoat.jpg",
-  "File:Édouard Manet, The Rue Mosnier with Flags, 1878.jpg",
-  "File:Wright of Derby, The Orrery.jpg",
-  "File:Whistlers Mother high res.jpg",
-  "File:Velazquez-The Surrender of Breda.jpg",
-  "File:Tor-Arne Moen Natural selection.jpg",
-  "File:Redningsbåden køres gennem klitterne (high resolution).jpg",
-  "File:Fra et romersk osteria.jpg",
-  "File:Winter Landscape with Brabrand Church.jpg",
-  "File:Fra Københavns Børs.jpg",
-  "File:L.A. Ring, Snebillede. Sankt Jørgensbjerg, 1915. Privateje. Særudstillingen 'Kunstnerbrødre. L.A. Ring & H.A.Brendekilde' Nivaagaards Malerisamling 22.9.19-26.1.20.jpg",
-  "File:P.S. Krøyer, Et møde i Videnskabernes Selskab, 1897, Det Kongelige Danske Videnskaberners Selskab.jpg",
-  "File:P S Krøyer 1899 - Sommeraften ved Skagens strand. Kunstneren og hans hustru.jpg",
-  "File:Johannes Wilhjelm, Skagens gamle kirke. Nat, 1910. SKM1393, Skagens Kunstmuseer.jpg",
-  "File:Aivazovsky, Ivan - The Ninth Wave.jpg",
-  "File:Ilia Efimovich Repin (1844-1930) - Volga Boatmen (1870-1873).jpg",
-  "File:Konstantin Makovsky - Christmastide Divination.jpg",
-  "File:Shishkin, Ivan - Morning in a Pine Forest.jpg",
-  "File:Vasnetsov samolet.jpg",
-  "File:Wassilij Grigorjewitsch Perow 004.jpg",
-  "File:Aimitsu-1941-Flowers(Yama-Araragi).png",
-  "File:Betzy Akersloot-Berg - Fra Lofoten - NG.M.04291 - National Museum of Art, Architecture and Design.jpg",
-  "File:Betzy Akersloot-Berg - Landscape at the Coast - NG.M.04368 - National Museum of Art, Architecture and Design.jpg",
-  "File:Noordzeestrand van Betzy Akersloot.JPG",
-  "File:Aiva 1846.jpg",
-  "File:Aivazovsky Mekhitarist Fathers San Lazzaro.jpg",
-  "File:Иван К. Айвазовский - От Млеты до Гудаури (1868).jpg",
-  "File:Ivan Aivazovsky - Ship on Stormy Seas.jpg",
-  "File:CRIMEAN COAST BY MOONLIGHT.jpg",
-  "File:Ivan aivazovsky genoese towers in the black sea045805).jpg",
-  "File:Ivan Konstantinovich Aivazovsky - A View of the Bosporus with the Hagia Sophia and the Maiden's Tower in the Moonlight.jpg",
-  "File:Ivan Konstantinovič Ajvazovskij - Shepherds with a flock of sheep - 184559 - National Museum in Warsaw.jpg",
-  "File:İvan Ayvazovski - Misir səhnəsi.jpg",
-  "File:İvan Ayvazovski - Qış vaxtı Sərçə təpələrindən Moskvanın görünüşü.jpg",
-  "File:River Scene by George Ames Aldrich, oil on canvas, 36 x 36 inches.jpg",
-  "File:George Ames Aldrich Brittany Mill.jpg",
-  "File:George Ames Aldrich Mountain Lake.jpg",
-  "File:George Ames Aldrich Maine Harbor Scene.jpg",
-  "File:De vlinders Rijksmuseum SK-A-3095.jpeg",
-  "File:Washington Allston - Diana on a Chase - 1956.62 - Fogg Museum.jpg",
-  "File:Washington Allston - Italian Landscape - Google Art Project.jpg",
-  "File:Lourens Alma Tadema (1836 - 1912) - Romeins park (Opus nr. CLXXXIV) - hwm0005 - The Mesdag Collection.jpg",
-  "File:Unloading the catch, Bay of Naples (1890), by Robert Alott.jpg",
-  "File:Robert Alott Mediterrane Uferlandschaft 1882.png",
-  "File:Robert Alott Kolosseum.jpg",
-  "File:Robert Alott Südliche Parklandschaft mit figürlicher Staffage.jpg",
-  "File:Hendrik de Clerck & Denis van Alsloot - La mort d'Adonis.jpg",
-  "File:Aris Kalaizis Triptych Oil on wood 3x 51x43 inch 1996.png",
-  "File:02 WIKI 2014 M 2 o-T-190x230cm-Acryl-auf-LW-AATIFI-2014 WH 63448 Kopie Kopie.jpg",
-  "File:305 Lf Poème a Lilou 2010 120 x 80 cm Acrylique et pastel.jpg",
-  "File:Ado-Nay, Manuel Rivero. Grave impedimento de existencia o desarrollo III - 100x150 cm - Óleo sobre tabla.jpg",
-  "File:Amor de circo.jpg",
-  "File:Art Radiography Image Result.jpg",
-  "File:3 Дороги войны 150х340см.Х.М.1956-2009Г. resize.jpg",
-  "File:1920 - before the storm.jpg",
-  "File:A Anunciação - chegada das trovoadas.jpg",
-  "File:Angels (Andělé) painted by Loos.jpg",
-  "File:\"TALE4\" Gemälde von Josef Anton Geiser.jpg",
-  "File:39.Краски осени 70х80 х.м..jpg",
-  "File:Abstracto 1402 125 x 155.jpg",
-  "File:Ansó Casas Cidón.jpg",
-  "File:A moonlit night of the series \"The East\".jpg",
-  "File:A Reading Girl Sitting in a Doorway.jpg",
-  "File:Great Wave off Kanagawa2.jpg",
-  "File:Johan Zoffany - Tribuna of the Uffizi - Google Art Project.jpg",
-  "File:Attributs de la peinture, de la sculpture et de l'architecture - Anne Vallayer-Coster.jpg",
-  "File:Bemberg Fondation - Les bords du loing vers Moret - Alfred Sisley 1883.jpg",
-  "File:Boy with a Basket of Fruit by Caravaggio.jpg",
-  "File:DushanTappe.jpg",
-  "File:Fodboldspillere. Sofus header..jpg",
-  "File:Francesco Hayez - Distruzione des tempio di Gerusalemme.jpg",
-  "File:Regatta, Guardi, HuW34, Alte Pinakothek Munich.jpg",
-  "File:Hans Andreas Dahl-On the mountaintop.jpg",
-  "File:IranianMusicGroup.jpg",
-  "File:Jacobi-Automne Canadien.jpg",
-  "File:La Joven Madre 1889 by Arturo Michelena.jpg",
-  "File:La Pie de Monet.jpg",
-  "File:Madame Alexandre Bernheim.jpg",
-  "File:Noon, rest from work - Van Gogh.jpeg",
-  "File:Monet - Das Nachtessen, 1868-69.jpg",
-  "File:Henry Scott Tuke - Beach Study.jpg",
-  "File:J.L. Gerome - The Wailing Wall - Google Art Project.jpg",
-  "File:Reverend Robert Walker (1755 - 1808) Skating on Duddingston Loch.jpg",
-  "File:Theo van Doesburg - Girl with Ranunculus - Google Art Project.jpg",
-  "File:Edgar Degas - Interior - Google Art Project.jpg",
-  "File:Sargent, John Singer (RA) - Gassed - Google Art Project.jpg",
-  "File:Karl Brullov - The Last Day of Pompeii - Google Art Project.jpg",
-  "File:Henri Rousseau (French) - A Centennial of Independence - Google Art Project.jpg",
-  "File:Paul Klee - Gespenst eines Genies (Ghost of a Genius) - Google Art Project.jpg",
-  "File:Leo Gestel - Mallorca, Terreno - Google Art Project.jpg",
-  "File:Paul Delaroche - Napoleon Crossing the Alps - Google Art Project 2.jpg",
-  "File:The Ruins of Holyrood Chapel (Louis Daguerre), 1824 (Google Art Project).jpg",
-  "File:Henri Rousseau - The Waterfall - Google Art Project.jpg",
-  "File:Edouard Detaille - The Dream - Google Art Project.jpg",
-  "File:Sophie Anderson - Elaine - Google Art Project.jpg",
-  "File:Gustave Le Gray - Brig upon the Water - Google Art Project.jpg",
-  "File:Gustave Courbet - Trellis - Google Art Project.jpg",
-  "File:Winslow Homer - The Fog Warning - Google Art Project.jpg",
-  "File:Isaac Israels - Transport of colonial soldiers - Google Art Project.jpg",
-  "File:John Constable - Cloud Study - Google Art Project.jpg",
-  "File:Judith Leyster - Self-Portrait - Google Art Project.jpg",
-  "File:William Glackens - East River Park - Google Art Project.jpg",
-  "File:Boris Kustodiev - Shrovetide - Google Art Project.jpg",
-  "File:John William Waterhouse - Echo and Narcissus - Google Art Project.jpg",
-  "File:Vincent van Gogh - Enclosed Field with Ploughman - Google Art Project.jpg",
-  "File:Henryk Siemiradzki - Christian Dirce - Google Art Project.jpg",
-  "File:Tom Roberts - Shearing the rams - Google Art Project.jpg",
-  "File:Edgar Degas - Ballet Rehearsal on Stage - Google Art Project.jpg",
-  "File:James Jacques Joseph Tissot - The Ark Passes Over the Jordan - Google Art Project.jpg",
-  "File:Rosa Bonheur - Ploughing in Nevers - Google Art Project.jpg",
-  "File:Vincent van Gogh - Green Field - Google Art Project.jpg",
-  "File:Antonio de Pereda - Allegory of Vanity - Google Art Project.jpg",
-  "File:Claude Monet - Springtime - Google Art Project.jpg",
-  "File:Henry Ossawa Tanner - The Young Sabot Maker - Google Art Project.jpg",
-  "File:Vincent van Gogh - Wheatfield with crows - Google Art Project.jpg",
-  "File:Mewar School - Krishna's Victory Over Aghasura - Google Art Project.jpg",
-  "File:Gustav Klimt - Beech Grove I - Google Art Project.jpg",
-  "File:Caspar David Friedrich - Cairn in Snow - Google Art Project.jpg",
-  "File:Joseph Wright of Derby - Dovedale by Moonlight - Google Art Project.jpg",
-  "File:William Blake Richmond - Venus and Anchises - Google Art Project.jpg",
-  "File:Vincent Van Gogh - Corn Harvest in Provence - Google Art Project.jpg",
-  "File:Gauguin, Paul - Landscape near Arles - Google Art Project.jpg",
-  "File:John Constable - Wivenhoe Park, Essex - Google Art Project.jpg",
-  "File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg",
-  "File:Lord Frederic Leighton - Cymon and Iphigenia - Google Art ProjectFXD.jpg",
-  "File:Camille Pissarro - Boulevard Montmartre, Spring - Google Art Project.jpg",
-  "File:John Glover - Patterdale landscape with cattle - Google Art Project.jpg",
-  "File:John Quidor - The Headless Horseman Pursuing Ichabod Crane - Google Art Project.jpg",
-  "File:Thomas Fearnley - Grindelwaldgletscher - Google Art Project.jpg",
-  "File:Vincent van Gogh - De oogst - Google Art Project.jpg",
-  "File:Claude Lorrain (imitator of) - Mercury and Argus - Google Art Project.jpg",
-  "File:Claude-Joseph Vernet - The four times of day- Night - Google Art Project.jpg",
-  "File:Pieter Bruegel the Elder- The Harvesters - Google Art Project.jpg",
-  "File:Frederic Edwin Church - Niagara Falls, from the American Side - Google Art Project.jpg",
-  "File:John Martin - The Great Day of His Wrath - Google Art Project.jpg",
-  "File:John Crome - Boys Bathing on the River Wensum, Norwich - Google Art Project.jpg",
-  "File:Edgar Degas - Before the Performance - Google Art Project.jpg",
-  "File:Modest Urgell - Landscape - Google Art Project (359249).jpg",
-  "File:Caspar David Friedrich - Der einsame Baum - Google Art Project.jpg",
-  "File:John Wootton - Classical Landscape - Google Art Project (2400346).jpg",
-  "File:Vincent van Gogh - Geploegde akkers ('De voren') - Google Art Project.jpg",
-  "File:John Singer Sargent - Carnation, Lily, Lily, Rose - Google Art Project.jpg",
-  "File:John Martin - Kensington Gardens - Google Art Project (2334653).jpg",
-  "File:Frederic Edwin Church - Cotopaxi - Google Art Project (549119).jpg",
-  "File:Prilidiano Pueyrredon - Paisaje de la costa (San Isidro) - Google Art Project (479392).jpg",
-  "File:Fausto Zonaro - The Daughter of the English Ambassador Riding in a Palanquin - Google Art Project.jpg",
-  "File:Jan Brueghel the Elder - The Sermon on the Mount - Google Art Project.jpg",
-  "File:John Constable - Cloud Study - Google Art Project (2443587).jpg",
-  "File:Nicolas Poussin - Paysage avec deux nymphes et un serpent - Google Art Project.jpg",
-  "File:William Holman Hunt - Our English Coasts, 1852 (`Strayed Sheep') - Google Art Project.jpg",
-  "File:Claude-Joseph Vernet - Villa at Caprarola - Google Art Project.jpg",
-  "File:John Constable - Flatford Mill - Google Art Project (2395103).jpg",
-  "File:John Constable - Dedham Lock - Google Art Project (2369629).jpg",
-  "File:John Linnell - In Dovedale - Google Art Project (2467112).jpg",
-  "File:Claude Monet - Poppy Field - Google Art Project (430231).jpg",
-  "File:Gustave Caillebotte - The Floor Planers - Google Art Project.jpg",
-  "File:Georges de La Tour - Rixe de musiciens - Google Art Project.jpg",
-  "File:Prilidiano Pueyrredon - Capricho (Olivos 13 Nov. 1858) - Google Art Project.jpg",
-  "File:Moscow Courtyard (Polenov, 1878) - Google Art Project.jpg",
-  "File:Edward Hicks - The Peaceable Kingdom - Google Art Project (27748171).jpg",
-  "File:Erik Werenskiold - September - Google Art Project.jpg",
-  "File:The Mall - Google Art Project.jpg",
-  "File:Arthur Streeton - Fire's on - Google Art Project-x0-y0.jpg",
-  "File:Ferdinand Hodler - Landschaft in den Schweizer Alpen - Google Art Project.jpg",
-  "File:Landscape with Lake - Google Art Project.jpg",
-  "File:Johannes Vermeer - Gezicht op huizen in Delft, bekend als 'Het straatje' - Google Art Project.jpg",
-  "File:Arthur Streeton - Fire's on - Google Art Project-x0-y2.jpg",
-  "File:Atardecer - Google Art Project.jpg",
-  "File:Edward Lear - Corfu from Ascension - Google Art Project (2425017).jpg",
-  "File:Joseph Mallord William Turner - On the Washburn - Google Art Project (2431414).jpg",
-  "File:Bologna - Google Art Project.jpg",
-  "File:Ludwig Richter - Waldbrunnen bei Ariccia - Google Art Project.jpg",
-  "File:Last Tavern at Town Gate (Perov, 1868) - Google Art Project.jpg",
-  "File:Caspar David Friedrich - A Walk at Dusk - Google Art Project.jpg"
+  {
+    "wikidata": "109970785",
+    "name": "File:Landscape with the Good Samaritan - Rembrandt.jpg"
+  },
+  {
+    "wikidata": "54727089",
+    "name": "File:Bernardo Bellotto - View of Warsaw from the Royal Castle - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "30727835",
+    "name": "File:Hendrik Voogd - Italian landscape with Umbrella Pines.jpg"
+  },
+  {
+    "wikidata": "21939124",
+    "name": "File:Agustín Salinas y Teruel - School Festival at Ipiranga - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21914112",
+    "name": "File:Albert Bierstadt - A Storm in the Rocky Mountains, Mt. Rosalie - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22490472",
+    "name": "File:August Friedrich Albrecht Schenck - Anguish - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22007259",
+    "name": "File:Albert Bierstadt - Among the Sierra Nevada, California - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "18772397",
+    "name": "File:Albert Bierstadt - Seal Rock, California.jpg"
+  },
+  {
+    "wikidata": "22572210",
+    "name": "File:Canaletto - Bucentaur's return to the pier by the Palazzo Ducale - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "12436176",
+    "name": "File:Gustave Caillebotte - Rue Halévy, vue d'un sixième étage.jpg"
+  },
+  {
+    "wikidata": "536505",
+    "name": "File:Julius Schnorr von Carolsfeld- Ruth im Feld des Boaz.jpg"
+  },
+  { "wikidata": "98718870", "name": "File:Chaïm Soutine - Vue de Céret.jpg" },
+  {
+    "wikidata": "85501960",
+    "name": "File:Christ's Entry into Brussels in 1889.jpg"
+  },
+  { "wikidata": "3069947", "name": "File:Church Heart of the Andes.jpg" },
+  {
+    "wikidata": "22182379",
+    "name": "File:Edgar Degas - Waiting - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21855901",
+    "name": "File:Edouard Manet - Luncheon on the Grass - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "18777858",
+    "name": "File:El Tres de Mayo, by Francisco de Goya, from Prado thin black margin.jpg"
+  },
+  {
+    "wikidata": "57398717",
+    "name": "File:Equestrian Portrait of Cornelis (1639–1680) and Michiel Pompe van Meerdervoort (1638–1653) with Their Tutor and Coachman (\"Starting for the Hunt\") MET DP146442.jpg"
+  },
+  {
+    "wikidata": "29836468",
+    "name": "File:Erik Werenskiold - Peasant Burial - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "17485594",
+    "name": "File:Feld mit Kornhocken von August Haake.jpg"
+  },
+  {
+    "wikidata": "91191558",
+    "name": "File:Ferdinand Hodler - Der Genfersee von Chexbres aus.jpg"
+  },
+  {
+    "wikidata": "3946629",
+    "name": "File:Frans Post - Gezicht op Olinda, Brazilië.jpg"
+  },
+  {
+    "wikidata": "21977254",
+    "name": "File:Frederic Edwin Church - Aurora Borealis - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21880535",
+    "name": "File:Frederic Remington - Aiding a Comrade - Google Art Project.jpg"
+  },
+  { "wikidata": "1716496", "name": "File:Fruitbowlwithmelons.jpg" },
+  {
+    "wikidata": "29856501",
+    "name": "File:Paul Gauguin - Fatata te Miti (By the Sea) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "29835502",
+    "name": "File:Adolph Tidemand & Hans Gude - Bridal Procession on the Hardangerfjord - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22130191",
+    "name": "File:Joseph Mallord William Turner - Dort or Dordrecht- The Dort Packet-Boat from Rotterdam Becalmed - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "159734",
+    "name": "File:Joseph Mallord William Turner - The Burning of the Houses of Lords and Commons, 16 October 1834 - 1942.647 - Cleveland Museum of Art.jpg"
+  },
+  {
+    "wikidata": "13462354",
+    "name": "File:Joseph Mallord William Turner - The Sun of Venice Going to Sea - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "37806971",
+    "name": "File:Leitura by José Ferraz de Almeida Júnior 1892.jpg"
+  },
+  {
+    "wikidata": "139701072",
+    "name": "File:L'Embarquement pour Cythere, by Antoine Watteau, from C2RMF retouched.jpg"
+  },
+  {
+    "wikidata": "15415578",
+    "name": "File:La Chambre à Arles, by Vincent van Gogh, from C2RMF.jpg"
+  },
+  {
+    "wikidata": "32706287",
+    "name": "File:Legend of the Holy Ermit Anthony, Meister der Hl Sippe, W.A.F. 452, Alte Pinakothek Munich.jpg"
+  },
+  {
+    "wikidata": "75999870",
+    "name": "File:Low Tide at Pourville, by Claude Monet, Cleveland Museum of Art, 1947.196.jpg"
+  },
+  { "wikidata": "22326740", "name": "File:In the Conservatory.jpg" },
+  {
+    "wikidata": "17843928",
+    "name": "File:MANET - Música en las Tullerías (National Gallery, Londres, 1862).jpg"
+  },
+  {
+    "wikidata": "33018157",
+    "name": "File:Miranda en la Carraca by Arturo Michelena.jpg"
+  },
+  { "wikidata": "17870580", "name": "File:Morning, Interior - Luce.jpeg" },
+  {
+    "wikidata": "74128260",
+    "name": "File:Pedro Américo - Independência ou Morte - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "23598834",
+    "name": "File:Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13352840",
+    "name": "File:Pieter Brueghel the Elder - The Dutch Proverbs - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "36807340",
+    "name": "File:Proclamação da República by Benedito Calixto 1893.jpg"
+  },
+  {
+    "wikidata": "6436424",
+    "name": "File:The Great Sphinx, Pyramids of Gizeh-1839) by David Roberts, RA.jpg"
+  },
+  {
+    "wikidata": "20604262",
+    "name": "File:Thomas Le Clear - Interior with Portraits - Smithsonian.jpg"
+  },
+  {
+    "wikidata": "8483807",
+    "name": "File:Tropenmuseum Royal Tropical Institute Objectnumber 3348-19 Huizen aan het water in Coronie, vermo2.jpg"
+  },
+  { "wikidata": "24486949", "name": "File:Valmy Battle painting.jpg" },
+  {
+    "wikidata": "25498286",
+    "name": "File:Van Gogh - Starry Night - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "36407370",
+    "name": "File:Farmhouse in Provence, 1888, Vincent van Gogh, NGA.jpg"
+  },
+  {
+    "wikidata": "23905070",
+    "name": "File:Vincent van Gogh - Irises (1889).jpg"
+  },
+  { "wikidata": "12887939", "name": "File:Vernet-Battle of Hanau.jpg" },
+  {
+    "wikidata": "21856227",
+    "name": "File:Vincent van Gogh - Starry Night - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "17501085",
+    "name": "File:Willem van de Velde II - Dutch men-o'-war and other shipping in a calm.jpg"
+  },
+  {
+    "wikidata": "6053842",
+    "name": "File:William Holman Hunt - The Scapegoat.jpg"
+  },
+  {
+    "wikidata": "30163100",
+    "name": "File:Édouard Manet, The Rue Mosnier with Flags, 1878.jpg"
+  },
+  { "wikidata": "1292995", "name": "File:Wright of Derby, The Orrery.jpg" },
+  { "wikidata": "17964240", "name": "File:Whistlers Mother high res.jpg" },
+  {
+    "wikidata": "4400638",
+    "name": "File:Velazquez-The Surrender of Breda.jpg"
+  },
+  {
+    "wikidata": "33733229",
+    "name": "File:Tor-Arne Moen Natural selection.jpg"
+  },
+  {
+    "wikidata": "20698739",
+    "name": "File:Redningsbåden køres gennem klitterne (high resolution).jpg"
+  },
+  { "wikidata": "19218035", "name": "File:Fra et romersk osteria.jpg" },
+  {
+    "wikidata": "60278131",
+    "name": "File:Winter Landscape with Brabrand Church.jpg"
+  },
+  { "wikidata": "48780072", "name": "File:Fra Københavns Børs.jpg" },
+  {
+    "wikidata": "84666055",
+    "name": "File:L.A. Ring, Snebillede. Sankt Jørgensbjerg, 1915. Privateje. Særudstillingen 'Kunstnerbrødre. L.A. Ring & H.A.Brendekilde' Nivaagaards Malerisamling 22.9.19-26.1.20.jpg"
+  },
+  {
+    "wikidata": "79436209",
+    "name": "File:P.S. Krøyer, Et møde i Videnskabernes Selskab, 1897, Det Kongelige Danske Videnskaberners Selskab.jpg"
+  },
+  {
+    "wikidata": "254423",
+    "name": "File:P S Krøyer 1899 - Sommeraften ved Skagens strand. Kunstneren og hans hustru.jpg"
+  },
+  {
+    "wikidata": "75843812",
+    "name": "File:Johannes Wilhjelm, Skagens gamle kirke. Nat, 1910. SKM1393, Skagens Kunstmuseer.jpg"
+  },
+  {
+    "wikidata": "7273435",
+    "name": "File:Aivazovsky, Ivan - The Ninth Wave.jpg"
+  },
+  {
+    "wikidata": "21792",
+    "name": "File:Ilia Efimovich Repin (1844-1930) - Volga Boatmen (1870-1873).jpg"
+  },
+  {
+    "wikidata": "46359611",
+    "name": "File:Konstantin Makovsky - Christmastide Divination.jpg"
+  },
+  {
+    "wikidata": "7295324",
+    "name": "File:Shishkin, Ivan - Morning in a Pine Forest.jpg"
+  },
+  { "wikidata": "1374733", "name": "File:Vasnetsov samolet.jpg" },
+  {
+    "wikidata": "426701",
+    "name": "File:Wassilij Grigorjewitsch Perow 004.jpg"
+  },
+  {
+    "wikidata": "39521148",
+    "name": "File:Aimitsu-1941-Flowers(Yama-Araragi).png"
+  },
+  {
+    "wikidata": "97994753",
+    "name": "File:Betzy Akersloot-Berg - Fra Lofoten - NG.M.04291 - National Museum of Art, Architecture and Design.jpg"
+  },
+  {
+    "wikidata": "98001296",
+    "name": "File:Betzy Akersloot-Berg - Landscape at the Coast - NG.M.04368 - National Museum of Art, Architecture and Design.jpg"
+  },
+  {
+    "wikidata": "26432532",
+    "name": "File:Noordzeestrand van Betzy Akersloot.JPG"
+  },
+  { "wikidata": "113536395", "name": "File:Aiva 1846.jpg" },
+  {
+    "wikidata": "65547113",
+    "name": "File:Aivazovsky Mekhitarist Fathers San Lazzaro.jpg"
+  },
+  {
+    "wikidata": "92039031",
+    "name": "File:Иван К. Айвазовский - От Млеты до Гудаури (1868).jpg"
+  },
+  {
+    "wikidata": "112829358",
+    "name": "File:Ivan Aivazovsky - Ship on Stormy Seas.jpg"
+  },
+  { "wikidata": "84184784", "name": "File:CRIMEAN COAST BY MOONLIGHT.jpg" },
+  {
+    "wikidata": "123012346",
+    "name": "File:Ivan aivazovsky genoese towers in the black sea045805).jpg"
+  },
+  {
+    "wikidata": "100213174",
+    "name": "File:Ivan Konstantinovich Aivazovsky - A View of the Bosporus with the Hagia Sophia and the Maiden's Tower in the Moonlight.jpg"
+  },
+  {
+    "wikidata": "98899230",
+    "name": "File:Ivan Konstantinovič Ajvazovskij - Shepherds with a flock of sheep - 184559 - National Museum in Warsaw.jpg"
+  },
+  {
+    "wikidata": "118181282",
+    "name": "File:İvan Ayvazovski - Misir səhnəsi.jpg"
+  },
+  {
+    "wikidata": "118181284",
+    "name": "File:İvan Ayvazovski - Qış vaxtı Sərçə təpələrindən Moskvanın görünüşü.jpg"
+  },
+  {
+    "wikidata": "90804520",
+    "name": "File:River Scene by George Ames Aldrich, oil on canvas, 36 x 36 inches.jpg"
+  },
+  {
+    "wikidata": "66825107",
+    "name": "File:George Ames Aldrich Brittany Mill.jpg"
+  },
+  {
+    "wikidata": "66825137",
+    "name": "File:George Ames Aldrich Mountain Lake.jpg"
+  },
+  {
+    "wikidata": "66825134",
+    "name": "File:George Ames Aldrich Maine Harbor Scene.jpg"
+  },
+  {
+    "wikidata": "34320817",
+    "name": "File:De vlinders Rijksmuseum SK-A-3095.jpeg"
+  },
+  {
+    "wikidata": "105515910",
+    "name": "File:Washington Allston - Diana on a Chase - 1956.62 - Fogg Museum.jpg"
+  },
+  {
+    "wikidata": "22174883",
+    "name": "File:Washington Allston - Italian Landscape - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "128007067",
+    "name": "File:Lourens Alma Tadema (1836 - 1912) - Romeins park (Opus nr. CLXXXIV) - hwm0005 - The Mesdag Collection.jpg"
+  },
+  {
+    "wikidata": "122283133",
+    "name": "File:Unloading the catch, Bay of Naples (1890), by Robert Alott.jpg"
+  },
+  {
+    "wikidata": "69448864",
+    "name": "File:Robert Alott Mediterrane Uferlandschaft 1882.png"
+  },
+  { "wikidata": "103819508", "name": "File:Robert Alott Kolosseum.jpg" },
+  {
+    "wikidata": "103470064",
+    "name": "File:Robert Alott Südliche Parklandschaft mit figürlicher Staffage.jpg"
+  },
+  {
+    "wikidata": "21463217",
+    "name": "File:Hendrik de Clerck & Denis van Alsloot - La mort d'Adonis.jpg"
+  },
+  {
+    "wikidata": "41048106",
+    "name": "File:Aris Kalaizis Triptych Oil on wood 3x 51x43 inch 1996.png"
+  },
+  {
+    "wikidata": "54700463",
+    "name": "File:02 WIKI 2014 M 2 o-T-190x230cm-Acryl-auf-LW-AATIFI-2014 WH 63448 Kopie Kopie.jpg"
+  },
+  {
+    "wikidata": "54761831",
+    "name": "File:305 Lf Poème a Lilou 2010 120 x 80 cm Acrylique et pastel.jpg"
+  },
+  {
+    "wikidata": "61809888",
+    "name": "File:Ado-Nay, Manuel Rivero. Grave impedimento de existencia o desarrollo III - 100x150 cm - Óleo sobre tabla.jpg"
+  },
+  { "wikidata": "62663120", "name": "File:Amor de circo.jpg" },
+  { "wikidata": "66423595", "name": "File:Art Radiography Image Result.jpg" },
+  { "wikidata": "78085060", "name": "File:1920 - before the storm.jpg" },
+  {
+    "wikidata": "81066430",
+    "name": "File:A Anunciação - chegada das trovoadas.jpg"
+  },
+  {
+    "wikidata": "86113714",
+    "name": "File:Angels (Andělé) painted by Loos.jpg"
+  },
+  {
+    "wikidata": "90517538",
+    "name": "File:\"TALE4\" Gemälde von Josef Anton Geiser.jpg"
+  },
+  { "wikidata": "93175089", "name": "File:39.Краски осени 70х80 х.м..jpg" },
+  { "wikidata": "94899341", "name": "File:Abstracto 1402 125 x 155.jpg" },
+  { "wikidata": "99428702", "name": "File:Ansó Casas Cidón.jpg" },
+  {
+    "wikidata": "113707850",
+    "name": "File:A moonlit night of the series \"The East\".jpg"
+  },
+  {
+    "wikidata": "115610003",
+    "name": "File:A Reading Girl Sitting in a Doorway.jpg"
+  },
+  { "wikidata": "5576388", "name": "File:Great Wave off Kanagawa2.jpg" },
+  {
+    "wikidata": "22126801",
+    "name": "File:Johan Zoffany - Tribuna of the Uffizi - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "48485000",
+    "name": "File:Attributs de la peinture, de la sculpture et de l'architecture - Anne Vallayer-Coster.jpg"
+  },
+  {
+    "wikidata": "72181500",
+    "name": "File:Bemberg Fondation - Les bords du loing vers Moret - Alfred Sisley 1883.jpg"
+  },
+  {
+    "wikidata": "70414740",
+    "name": "File:Boy with a Basket of Fruit by Caravaggio.jpg"
+  },
+  { "wikidata": "24430066", "name": "File:DushanTappe.jpg" },
+  { "wikidata": "38444105", "name": "File:Fodboldspillere. Sofus header..jpg" },
+  {
+    "wikidata": "15207891",
+    "name": "File:Francesco Hayez - Distruzione des tempio di Gerusalemme.jpg"
+  },
+  {
+    "wikidata": "32841593",
+    "name": "File:Regatta, Guardi, HuW34, Alte Pinakothek Munich.jpg"
+  },
+  {
+    "wikidata": "116551895",
+    "name": "File:Hans Andreas Dahl-On the mountaintop.jpg"
+  },
+  { "wikidata": "24430259", "name": "File:IranianMusicGroup.jpg" },
+  { "wikidata": "18743983", "name": "File:Jacobi-Automne Canadien.jpg" },
+  {
+    "wikidata": "32968867",
+    "name": "File:La Joven Madre 1889 by Arturo Michelena.jpg"
+  },
+  { "wikidata": "25451669", "name": "File:La Pie de Monet.jpg" },
+  { "wikidata": "25530466", "name": "File:Madame Alexandre Bernheim.jpg" },
+  {
+    "wikidata": "17404952",
+    "name": "File:Noon, rest from work - Van Gogh.jpeg"
+  },
+  {
+    "wikidata": "79293166",
+    "name": "File:Monet - Das Nachtessen, 1868-69.jpg"
+  },
+  { "wikidata": "18869135", "name": "File:Henry Scott Tuke - Beach Study.jpg" },
+  {
+    "wikidata": "22137881",
+    "name": "File:J.L. Gerome - The Wailing Wall - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "715320",
+    "name": "File:Reverend Robert Walker (1755 - 1808) Skating on Duddingston Loch.jpg"
+  },
+  {
+    "wikidata": "23605075",
+    "name": "File:Theo van Doesburg - Girl with Ranunculus - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21864103",
+    "name": "File:Edgar Degas - Interior - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21924578",
+    "name": "File:Sargent, John Singer (RA) - Gassed - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21863469",
+    "name": "File:Karl Brullov - The Last Day of Pompeii - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22177953",
+    "name": "File:Henri Rousseau (French) - A Centennial of Independence - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21865766",
+    "name": "File:Paul Klee - Gespenst eines Genies (Ghost of a Genius) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21930748",
+    "name": "File:Leo Gestel - Mallorca, Terreno - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "20330145",
+    "name": "File:Paul Delaroche - Napoleon Crossing the Alps - Google Art Project 2.jpg"
+  },
+  {
+    "wikidata": "27062850",
+    "name": "File:The Ruins of Holyrood Chapel (Louis Daguerre), 1824 (Google Art Project).jpg"
+  },
+  {
+    "wikidata": "21909416",
+    "name": "File:Henri Rousseau - The Waterfall - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21857005",
+    "name": "File:Edouard Detaille - The Dream - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21878662",
+    "name": "File:Sophie Anderson - Elaine - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22648301",
+    "name": "File:Gustave Le Gray - Brig upon the Water - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21977946",
+    "name": "File:Gustave Courbet - Trellis - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22141387",
+    "name": "File:Winslow Homer - The Fog Warning - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21880276",
+    "name": "File:Isaac Israels - Transport of colonial soldiers - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21946358",
+    "name": "File:John Constable - Cloud Study - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21996574",
+    "name": "File:Judith Leyster - Self-Portrait - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21914906",
+    "name": "File:William Glackens - East River Park - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21854312",
+    "name": "File:Boris Kustodiev - Shrovetide - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21878879",
+    "name": "File:John William Waterhouse - Echo and Narcissus - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22009540",
+    "name": "File:Vincent van Gogh - Enclosed Field with Ploughman - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "54864839",
+    "name": "File:Henryk Siemiradzki - Christian Dirce - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22142609",
+    "name": "File:Tom Roberts - Shearing the rams - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21880441",
+    "name": "File:Edgar Degas - Ballet Rehearsal on Stage - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22493004",
+    "name": "File:James Jacques Joseph Tissot - The Ark Passes Over the Jordan - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21880384",
+    "name": "File:Rosa Bonheur - Ploughing in Nevers - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22491845",
+    "name": "File:Vincent van Gogh - Green Field - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21980088",
+    "name": "File:Antonio de Pereda - Allegory of Vanity - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "23610493",
+    "name": "File:Claude Monet - Springtime - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22491575",
+    "name": "File:Henry Ossawa Tanner - The Young Sabot Maker - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22621755",
+    "name": "File:Vincent van Gogh - Wheatfield with crows - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21977140",
+    "name": "File:Mewar School - Krishna's Victory Over Aghasura - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21847352",
+    "name": "File:Gustav Klimt - Beech Grove I - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21847238",
+    "name": "File:Caspar David Friedrich - Cairn in Snow - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "23590109",
+    "name": "File:Joseph Wright of Derby - Dovedale by Moonlight - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21878516",
+    "name": "File:William Blake Richmond - Venus and Anchises - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21987773",
+    "name": "File:Vincent Van Gogh - Corn Harvest in Provence - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22491140",
+    "name": "File:Gauguin, Paul - Landscape near Arles - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21996910",
+    "name": "File:John Constable - Wivenhoe Park, Essex - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21909103",
+    "name": "File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "86838885",
+    "name": "File:Lord Frederic Leighton - Cymon and Iphigenia - Google Art ProjectFXD.jpg"
+  },
+  {
+    "wikidata": "22009459",
+    "name": "File:Camille Pissarro - Boulevard Montmartre, Spring - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21998434",
+    "name": "File:John Glover - Patterdale landscape with cattle - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22126482",
+    "name": "File:John Quidor - The Headless Horseman Pursuing Ichabod Crane - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "29841851",
+    "name": "File:Thomas Fearnley - Grindelwaldgletscher - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13528902",
+    "name": "File:Vincent van Gogh - De oogst - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22152061",
+    "name": "File:Claude Lorrain (imitator of) - Mercury and Argus - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "23603121",
+    "name": "File:Claude-Joseph Vernet - The four times of day- Night - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22554956",
+    "name": "File:Pieter Bruegel the Elder- The Harvesters - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21865696",
+    "name": "File:Frederic Edwin Church - Niagara Falls, from the American Side - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13455000",
+    "name": "File:John Martin - The Great Day of His Wrath - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21994290",
+    "name": "File:John Crome - Boys Bathing on the River Wensum, Norwich - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21868318",
+    "name": "File:Edgar Degas - Before the Performance - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22029214",
+    "name": "File:Modest Urgell - Landscape - Google Art Project (359249).jpg"
+  },
+  {
+    "wikidata": "13291088",
+    "name": "File:Caspar David Friedrich - Der einsame Baum - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21994954",
+    "name": "File:John Wootton - Classical Landscape - Google Art Project (2400346).jpg"
+  },
+  {
+    "wikidata": "13526809",
+    "name": "File:Vincent van Gogh - Geploegde akkers ('De voren') - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13459122",
+    "name": "File:John Singer Sargent - Carnation, Lily, Lily, Rose - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21975430",
+    "name": "File:John Martin - Kensington Gardens - Google Art Project (2334653).jpg"
+  },
+  {
+    "wikidata": "22007297",
+    "name": "File:Frederic Edwin Church - Cotopaxi - Google Art Project (549119).jpg"
+  },
+  {
+    "wikidata": "21977871",
+    "name": "File:Prilidiano Pueyrredon - Paisaje de la costa (San Isidro) - Google Art Project (479392).jpg"
+  },
+  {
+    "wikidata": "22144719",
+    "name": "File:Fausto Zonaro - The Daughter of the English Ambassador Riding in a Palanquin - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21993527",
+    "name": "File:Jan Brueghel the Elder - The Sermon on the Mount - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22009127",
+    "name": "File:John Constable - Cloud Study - Google Art Project (2443587).jpg"
+  },
+  {
+    "wikidata": "21845642",
+    "name": "File:Nicolas Poussin - Paysage avec deux nymphes et un serpent - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13454138",
+    "name": "File:William Holman Hunt - Our English Coasts, 1852 (`Strayed Sheep') - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21864145",
+    "name": "File:Claude-Joseph Vernet - Villa at Caprarola - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22152985",
+    "name": "File:John Constable - Flatford Mill - Google Art Project (2395103).jpg"
+  },
+  {
+    "wikidata": "22129237",
+    "name": "File:John Constable - Dedham Lock - Google Art Project (2369629).jpg"
+  },
+  {
+    "wikidata": "22163987",
+    "name": "File:John Linnell - In Dovedale - Google Art Project (2467112).jpg"
+  },
+  {
+    "wikidata": "22136032",
+    "name": "File:Claude Monet - Poppy Field - Google Art Project (430231).jpg"
+  },
+  {
+    "wikidata": "21856443",
+    "name": "File:Gustave Caillebotte - The Floor Planers - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21991305",
+    "name": "File:Georges de La Tour - Rixe de musiciens - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21881129",
+    "name": "File:Prilidiano Pueyrredon - Capricho (Olivos 13 Nov. 1858) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13499550",
+    "name": "File:Moscow Courtyard (Polenov, 1878) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "23597355",
+    "name": "File:Edward Hicks - The Peaceable Kingdom - Google Art Project (27748171).jpg"
+  },
+  {
+    "wikidata": "29836484",
+    "name": "File:Erik Werenskiold - September - Google Art Project.jpg"
+  },
+  { "wikidata": "21941915", "name": "File:The Mall - Google Art Project.jpg" },
+  {
+    "wikidata": "22570910",
+    "name": "File:Arthur Streeton - Fire's on - Google Art Project-x0-y0.jpg"
+  },
+  {
+    "wikidata": "21987759",
+    "name": "File:Ferdinand Hodler - Landschaft in den Schweizer Alpen - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22132172",
+    "name": "File:Landscape with Lake - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13409022",
+    "name": "File:Johannes Vermeer - Gezicht op huizen in Delft, bekend als 'Het straatje' - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "22571858",
+    "name": "File:Arthur Streeton - Fire's on - Google Art Project-x0-y2.jpg"
+  },
+  { "wikidata": "21881123", "name": "File:Atardecer - Google Art Project.jpg" },
+  {
+    "wikidata": "22153894",
+    "name": "File:Edward Lear - Corfu from Ascension - Google Art Project (2425017).jpg"
+  },
+  {
+    "wikidata": "22251951",
+    "name": "File:Joseph Mallord William Turner - On the Washburn - Google Art Project (2431414).jpg"
+  },
+  { "wikidata": "21949423", "name": "File:Bologna - Google Art Project.jpg" },
+  {
+    "wikidata": "13318566",
+    "name": "File:Ludwig Richter - Waldbrunnen bei Ariccia - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "13499510",
+    "name": "File:Last Tavern at Town Gate (Perov, 1868) - Google Art Project.jpg"
+  },
+  {
+    "wikidata": "21993364",
+    "name": "File:Caspar David Friedrich - A Walk at Dusk - Google Art Project.jpg"
+  }
 ]

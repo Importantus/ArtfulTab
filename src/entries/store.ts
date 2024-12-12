@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 import loadImageData from "./imageLoader";
 import { Scaling, Fullscreen, Shuffle, ListChecks } from "lucide-vue-next";
-import { ImageFit, ImageFitObject, WikipediaData, ImageData, ImageSelectionModeObject, ImageSelectionMode } from "~/types";
+import { ImageFit, ImageFitObject, WikipediaData, ImageData, ImageSelectionModeObject, ImageSelectionMode, Image } from "~/types";
 
-type imageList = string[]
+type imageList = Image[]
 
 export const imageFit: ImageFitObject = {
     fill: {
@@ -106,7 +106,7 @@ export const useDataStore = defineStore("dataStore", {
             const imageName = await this.selectImage();
             this.error = "";
 
-            if (imageName && imageName.startsWith("File:")) {
+            if (imageName && imageName.name.startsWith("File:")) {
                 this.loading = true;
                 loadImageData(imageName).then((imageData) => {
                     this.loadingAttemps++;
@@ -125,9 +125,9 @@ export const useDataStore = defineStore("dataStore", {
                 });
             }
         },
-        async selectImage(): Promise<string> {
+        async selectImage(): Promise<Image> {
             const imageList = await fetch("/images.json").then((response) => response.json()) as imageList;
-            let imageName = "";
+            let imageName = null;
 
             if (this.settings.imageSelection === "random") {
                 imageName = imageList[Math.floor(Math.random() * imageList.length)];

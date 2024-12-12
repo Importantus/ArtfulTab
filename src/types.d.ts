@@ -4,6 +4,11 @@ interface ImageFit {
     icon: Icon;
 }
 
+export interface Image {
+    name: string,
+    wikidata: string
+}
+
 export interface ImageFitObject {
     [key: string]: ImageFit;
 }
@@ -23,7 +28,7 @@ export interface WikipediaData {
 }
 
 export interface ImageData {
-    image: string;
+    image: Image;
     files: File[];
     metadata: Metadata;
 }

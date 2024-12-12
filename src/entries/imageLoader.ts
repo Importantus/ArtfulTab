@@ -1,16 +1,15 @@
-import { WikimediaFileDataResponse, ImageData, Wikipedia, Label, File, Property } from "~/types";
+import { WikimediaFileDataResponse, ImageData, Wikipedia, Label, File, Property, Image } from "~/types";
 
-const CORSPROXY = "https://corsproxy.io/?";
+const CORSPROXY = "https://corsproxy.io/?url=";
 
 
 
-export default async function loadImageData(imageName: string): Promise<ImageData | null> {
+export default async function loadImageData(image: Image): Promise<ImageData | null> {
     try {
-        console.log("\n\n\nLoading image data for " + imageName);
+        console.log("\n\n\nLoading image data for " + image.name);
 
-        const imageData = await makeRequest<WikimediaFileDataResponse>(`https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(imageName)}&prop=imageinfo&format=json`, true);
-        const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + encodeURIComponent(imageName));
-        const wikimediaPageId = Object.keys(imageData.query.pages)[0];
+        const fileData: any = await makeRequest("https://api.wikimedia.org/core/v1/commons/file/" + encodeURIComponent(image.name));
+        const wikimediaPageId = image.wikidata
 
         if (!wikimediaPageId || wikimediaPageId.length < 2) {
             return null;
@@ -20,7 +19,7 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
 
         // Return null if no wikidata page exists
         if (!wikimediaPage.entities["M" + wikimediaPageId].statements.P6243) {
-            console.log("No wikidata page found for " + imageName);
+            console.log("No wikidata page found for " + image.name);
             return null
         }
 
@@ -81,7 +80,7 @@ export default async function loadImageData(imageName: string): Promise<ImageDat
         }
 
         return {
-            image: imageName,
+            image: image,
             files,
             metadata: {
                 title: getLabels(wikidata),
